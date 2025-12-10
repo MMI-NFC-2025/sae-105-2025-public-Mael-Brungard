@@ -13,22 +13,22 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 </head>
 <body>
-    <div class="menu">
+    <div class="menu" aria-expanded="false">
         <header class="head-bar">
-            <img src="/assets/favicon/favicon-96x96.png" alt="ES-logo">
-            <div class="nav-btn">
+            <a href="/index.html"><img src="/assets/favicon/favicon-96x96.png" alt="ES-logo"></a>
+            <div class="nav-btn" aria-expanded="false" aria-label="menu" aria-controls="menu-content">
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
         </header>
-        <nav class="menu-content">
+        <nav class="menu-content" id="menu-content" aria-hidden="true">
             <ul class="menu-list">
-                <li><a href="/festival.html">Le Festival</a></li>
-                <li><a href="/programme.html">Programme</a></li>
-                <li><a href="/artistes.html">Artistes</a></li>
-                <li><a href="/scenes.html">Scènes</a></li>
-                <li><a href="/infos.html">Infos Pratiques</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/festival.html">Le Festival ⋅</a></li>
+                <li><a href="/programme.html">Programme ⋅</a></li>
+                <li><a href="/artistes.html">Artistes ⋅</a></li>
+                <li><a href="/scenes.html">Scènes ⋅</a></li>
+                <li><a href="/infos.html">Infos Pratiques ⋅</a></li>
+                <li><a href="/contact.html">Contact ⋅</a></li>
             </ul>
         </nav>
     </div>
@@ -75,11 +75,10 @@
             </div>
         </div>
     </div>
-
     <footer>
         <div class="footer-mentions-part">
-            <span>MMI 1ère année  - SAE 105 - Montbéilard</span>
-            <span>Par Maël BRUNGARD @BooMooN.cloud</span>
+            <p>MMI 1ère année  - SAE 105 - Montbéilard</p>
+            <p>Par Maël BRUNGARD @BooMooN.cloud</p>
         </div>
         <div class="footer-nav">
             <span><a href="/festival.html">Le Festival</a></span>

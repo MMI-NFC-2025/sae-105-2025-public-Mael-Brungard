@@ -1,0 +1,28 @@
+/* Variable collection */
+:root {
+    /* Mode 1 */
+    /* color */
+    --fond: #fff4c6;
+    --light: #fefaf5;
+    --rouge: #ed3f24;
+    --vert: #6d9a02;
+    --dark: #130e0a;
+    --grey: #212529;
+    --jaune: #fed506;
+    /* number */
+    --padding-card: 1.25rem;
+    --gap-m: 1.5625rem;
+    --padding-section-h: 2.5rem;
+    --gap-l: 3.125rem;
+    --padding-section-v: 6.25rem;
+    --thin-card: 7.8125rem;
+    --card: 12.5rem;
+}
+
+@font-face {
+    font-family: "Magic-Vintage";
+    src: url("/assets/fonts/Magic-Vintage.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

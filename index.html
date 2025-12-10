@@ -5,30 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echos Sonores - Accueuil</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <script type="module" src="src/js/"></script>
+    <script type="module" src="src/js/menu.js"></script>
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="menu">
+    <div class="menu" aria-expanded="false">
         <header class="head-bar">
             <a href="/index.html"><img src="/assets/favicon/favicon-96x96.png" alt="ES-logo"></a>
-            <div class="nav-btn">
+            <div class="nav-btn" aria-expanded="false" aria-label="menu" aria-controls="menu-content">
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
         </header>
-        <nav class="menu-content">
+        <nav class="menu-content" id="menu-content" aria-hidden="true">
             <ul class="menu-list">
-                <li><a href="/festival.html">Le Festival</a></li>
-                <li><a href="/programme.html">Programme</a></li>
-                <li><a href="/artistes.html">Artistes</a></li>
-                <li><a href="/scenes.html">Scènes</a></li>
-                <li><a href="/infos.html">Infos Pratiques</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/festival.html">Le Festival ⋅</a></li>
+                <li><a href="/programme.html">Programme ⋅</a></li>
+                <li><a href="/artistes.html">Artistes ⋅</a></li>
+                <li><a href="/scenes.html">Scènes ⋅</a></li>
+                <li><a href="/infos.html">Infos Pratiques ⋅</a></li>
+                <li><a href="/contact.html">Contact ⋅</a></li>
             </ul>
         </nav>
     </div>
@@ -42,9 +45,9 @@
                 <span class="bold-text">du 29 au 31 octobre</span>
                 <span class="bold-text">Audincourt, 25400</span>
             </div>
-            <img src="/assets/images/mascotte.avif" alt="ES-mascotte">
+            <img id="mascotte" src="/assets/images/mascotte.avif" alt="ES-mascotte">
         </div>
-        <img src="/assets/icons/scroll-down.svg" alt="scroll-down-indicator">
+        <img id="scroll-icon" src="/assets/icons/scroll-down.svg" alt="scroll-down-indicator">
         <div class="lines-animates lines">
             <div class="red line"></div>
             <div class="yellow line"></div>
@@ -56,8 +59,11 @@
         <div class="home-card">
             <a href="">
                 <img src="/assets/images/cards/pass-3.avif" alt="pass-card-3-days">
-                <span><strong>Pass 3 jours</strong></span>
-                <span>Je réserve !</span>
+                <div class="card-text">
+                    <span><strong>Pass 3 jours</strong></span>
+                    <span>Je réserve !</span>
+                </div>
+                
             </a>
         </div>
         <div class="lines">
@@ -68,8 +74,10 @@
         <div class="home-card">
             <a href="">
                 <img src="/assets/images/cards/pass-2.avif" alt="pass-card-2-days">
-                <span><strong>Pass 2 jours</strong></span>
-                <span>Je réserve !</span>
+                <div class="card-text">
+                    <span><strong>Pass 2 jours</strong></span>
+                    <span>Je réserve !</span>
+                </div> 
             </a>
         </div>
         <div class="lines">
@@ -80,8 +88,10 @@
         <div class="home-card">
             <a href="">
                 <img src="/assets/images/cards/pass-1.avif" alt="pass-card-1-days">
-                <span><strong>Pass 1 jours</strong></span>
-                <span>Je réserve !</span>
+                <div class="card-text">
+                    <span><strong>Pass 1 jours</strong></span>
+                    <span>Je réserve !</span>
+                </div>
             </a>
         </div>
     </div>
@@ -90,8 +100,11 @@
         <div class="home-card">
             <a href="">
                 <img src="/assets/images/cards/programme.avif" alt="programme-card">
-                <span><strong>Programme</strong></span>
-                <span>En Savoir Plus...</span>
+                <div class="card-text">
+                    <span><strong>Programme</strong></span>
+                    <span>En Savoir Plus...</span> 
+                </div>
+                
             </a>
         </div>
         <div class="lines">
@@ -102,8 +115,11 @@
         <div class="home-card">
             <a href="">
                 <img src="/assets/images/cards/invite.avif" alt="invite-card">
-                <span><strong>Invités</strong></span>
-                <span>En Savoir Plus...</span>
+                <div class="card-text">
+                    <span><strong>Invités</strong></span>
+                    <span>En Savoir Plus...</span>
+                </div>
+                
             </a>
         </div>
         <div class="lines">
@@ -114,8 +130,11 @@
         <div class="home-card">
             <a href="">
                 <img src="/assets/images/cards/infos.avif" alt="infos-card">
-                <span><strong>Infos Pratiques</strong></span>
-                <span>En Savoir Plus...</span>
+                <div class="card-text">
+                    <span><strong>Infos Pratiques</strong></span>
+                    <span>En Savoir Plus...</span>
+                </div>
+                
             </a>
         </div>
     </div>
@@ -139,8 +158,8 @@
     
     <footer>
         <div class="footer-mentions-part">
-            <span>MMI 1ère année  - SAE 105 - Montbéilard</span>
-            <span>Par Maël BRUNGARD @BooMooN.cloud</span>
+            <p>MMI 1ère année  - SAE 105 - Montbéilard</p>
+            <p>Par Maël BRUNGARD @BooMooN.cloud</p>
         </div>
         <div class="footer-nav">
             <span><a href="festival.html">Le Festival</a></span>
