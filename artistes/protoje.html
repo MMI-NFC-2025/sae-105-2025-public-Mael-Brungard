@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echos Sonores - Protoje</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <script type="module" src="/src/js/"></script>
+    <script type="module" src="/src/js/menu.js"></script>
+    <script type="module" src="/src/js/carousel.js"></script>
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
@@ -62,6 +63,9 @@
     <div class="galerie-section section licorn-section">
         <h2>Galerie Photos</h2>
         <div class="galerie-carousel">
+            <button class="galerie-carousel-button  carousel__button--prev" aria-label="Défiler vers la gauche">
+                <img src="/assets/icons/icon_arrowcarrousel.svg" alt="fleche gauche" />
+            </button>
             <div class="galerie-carousel-list">
                 <div class="galerie-carousel-item">
                     <img src="/assets/images/artistes/protoje/protoje-galerie1.avif" alt="artist-galerie-photo">
@@ -73,14 +77,9 @@
                     <img src="/assets/images/artistes/protoje/protoje-galerie3.avif" alt="artist-galerie-photo">
                 </div>
             </div>
-            <div class="galerie-carousel-controls">
-                <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">
-                    <img src="/assets/icons/icon_arrowcarrousel.svg" alt="fleche gauche" />
-                </button>
-                <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">
-                    <img src="/assets/icons/icon_arrowcarrousel.svg" alt="fleche droite" />
-                </button>
-            </div>
+            <button class="galerie-carousel-button carousel__button--next" aria-label="Défiler vers la droite">
+                <img src="/assets/icons/icon_arrowcarrousel.svg" alt="fleche droite" />
+            </button>
         </div>
     </div>
     <footer>

@@ -5,6 +5,6 @@ let isOpen = false;
 toggle.addEventListener('click', () => {
     menu_content.ariaHidden = isOpen;
     toggle.ariaExpanded = !isOpen;
-    menu.ariaExpanded = !isOpen;
+    menu.classList.toggle('close');
     isOpen = !isOpen;
 });
