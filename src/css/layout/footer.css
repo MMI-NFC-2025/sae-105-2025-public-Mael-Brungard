@@ -34,10 +34,3 @@ footer {
     justify-content: center;
     gap: 10px;
 }
-
-.separator {
-    border-radius: 10px;
-    width: 5px;
-    height: 5px;
-    background-color: var(--light);
-}
