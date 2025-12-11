@@ -602,3 +602,28 @@ details summary {
         text-shadow: none;
     }
 }
+
+.artiste-info-card {
+    background-color: var(--light);
+
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+    .artiste-info-card-content {
+        padding: var(--padding-card);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .artiste-info-card-title,
+    p {
+        padding: var(--padding-card);
+        margin: 0;
+    }
+}
