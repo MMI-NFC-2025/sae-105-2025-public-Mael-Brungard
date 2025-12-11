@@ -1,5 +1,5 @@
 /* Header défault */
-.head-bar {
+.header__headbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@
     }
 }
 
-.menu-content {
+.menu__content {
     height: 95vh;
     flex: 1;
     display: flex;
@@ -90,7 +90,7 @@
 }
 
 /* Header Fermé */
-.close::before {
+.menu--close::before {
     opacity: 0;
 }
 
@@ -98,7 +98,7 @@
     font-size: 1.2rem;
 }
 
-.menu-content[aria-hidden='true'] {
+.menu__content[aria-hidden='true'] {
     height: 0;
     overflow: hidden;
     background: none;

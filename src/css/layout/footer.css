@@ -8,9 +8,9 @@ footer {
     color: var(--light);
 }
 
-.footer-mentions-legale,
-.footer-mentions-part,
-.footer-nav {
+.footer__mentions-legale,
+.footer__mentions-part,
+.footer__nav {
     p {
         margin: 0;
         padding: 0;
@@ -21,13 +21,13 @@ footer {
     }
 }
 
-.footer-mentions-part {
+.footer__mentions-part {
     display: flex;
     flex-direction: column;
 }
 
-.footer-mentions-legale,
-.footer-nav {
+.footer__mentions-legale,
+.footer__nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;

@@ -1,8 +1,8 @@
-const carousel = document.querySelector('.galerie-carousel-list');
+const carousel = document.querySelector('.section--galerie__carousel-list');
 const nextbtn = document.querySelector('.carousel__button--next');
 const prevbtn = document.querySelector('.carousel__button--prev');
 
-const premierItem = document.querySelector(".galerie-carousel-item");
+const premierItem = document.querySelector(".section--galerie__carousel-item");
 const scrollAmount = premierItem.clientWidth;
 
 if (carousel) {

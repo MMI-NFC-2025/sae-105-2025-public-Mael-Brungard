@@ -24,6 +24,10 @@ h1 {
     margin: 0;
 }
 
+.bold-text {
+    font-weight: 700;
+}
+
 .section {
     position: relative;
     display: flex;
@@ -33,7 +37,7 @@ h1 {
     gap: var(--gap-m);
 }
 
-.home-section {
+.section--home {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,12 +54,12 @@ h1 {
     }
 }
 
-.home-content {
+.section--home__content {
     gap: 10px;
 }
 
-.home-content,
-.home-infos {
+.section--home__content,
+.section--home__content__info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +101,7 @@ h1 {
     color: var(--light);
 }
 
-.reggae-section {
+.section--reggae {
     background: url('/assets/images/section-background.avif');
     background-position: start;
     background-size: cover;
@@ -121,7 +125,7 @@ h1 {
     z-index: -1;
 }
 
-.white-section {
+.section--white {
     background-color: var(--light);
 }
 
@@ -161,17 +165,17 @@ h1 {
     }
 }
 
-.carousel-container {
+.section--partenaire__carousel-container {
     overflow-x: scroll;
 }
 
-.carousel-items-list {
+.section--partenaire__carousel-items-list {
     width: 300%;
     display: flex;
     align-items: center;
 }
 
-.carousel-item {
+.section--partenaire__carousel-item {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -182,11 +186,11 @@ h1 {
     }
 }
 
-.hero-section {
+.section--hero {
     position: relative;
 }
 
-.hero-banner {
+.hero__banner {
     height: 250px;
     display: flex;
     justify-content: center;
@@ -207,7 +211,7 @@ h1 {
     }
 }
 
-.hero-banner::before {
+.hero__banner::before {
     content: "";
     position: absolute;
     top: 0;
@@ -220,7 +224,7 @@ h1 {
     z-index: 0;
 }
 
-.hero-content {
+.hero__content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -229,8 +233,8 @@ h1 {
     gap: 10px;
 }
 
-.hero-content-1 {
-    .hero-card {
+.hero__content--small {
+    .hero__content__card {
         width: 100%;
         position: relative;
         height: var(--thin-card);
@@ -281,8 +285,8 @@ h1 {
     backdrop-filter: blur(10px);
 }
 
-.team-list,
-.hebergement-list {
+.section--equipe__list,
+.section--hebergement__list {
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -311,10 +315,10 @@ h1 {
     }
 }
 
-.edition-section {
+.section--edition {
 
-    .themes,
-    .valeurs {
+    .section--edition__themes,
+    .section--edition__valeurs {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -326,7 +330,7 @@ h1 {
         }
     }
 
-    .valeurs-container {
+    .section--edition__valeurs__container {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -381,7 +385,7 @@ h1 {
     }
 }
 
-.hero-content-2 {
+.hero__content--large {
     padding: var(--padding-section-v) var(--padding-section-h);
     gap: var(--gap-l);
 }
@@ -390,7 +394,7 @@ h1 {
     color: var(--dark);
 }
 
-.tarifs-card {
+.section--tarifs__card {
     background-color: rgba(255, 255, 255, 0.75);
     padding: var(--padding-card);
     border-radius: 10px;
@@ -401,7 +405,7 @@ h1 {
     }
 }
 
-.transport-section {
+.section--transport {
 
     h3 {
         text-align: start;
@@ -493,7 +497,7 @@ details summary {
     cursor: pointer;
 }
 
-.contact-section {
+.section--contact {
     display: flex;
     flex-direction: column;
 
@@ -504,14 +508,14 @@ details summary {
     }
 }
 
-.contact-content {
+.section--contact__content {
     padding: var(--padding-section-h);
 
     h2 {
         text-align: start;
     }
 
-    .contact-background-image {
+    .section--contact__background-image {
         content: '';
         background: url('/assets/images/licorn-bg.avif');
         background-position: center;
@@ -526,7 +530,7 @@ details summary {
 
     }
 
-    .contact-form {
+    .section--contact__form {
         position: relative;
         border-radius: 20px;
         overflow: hidden;
@@ -576,7 +580,7 @@ details summary {
     }
 }
 
-.hero-banner-custom {
+.hero__banner-custom {
     height: 250px;
     display: flex;
     justify-content: center;
@@ -628,11 +632,11 @@ details summary {
     }
 }
 
-.galerie-section {
-    padding: 0;
+.section--galerie {
+    padding-inline: 0;
 }
 
-.galerie-carousel-button {
+.section--galerie__carousel-button {
     flex: 1;
     position: absolute;
     display: flex;
@@ -652,11 +656,11 @@ details summary {
     right: 0;
 }
 
-.galerie-carousel-list::-webkit-scrollbar {
+.section--galerie__carousel-list::-webkit-scrollbar {
     height: 0;
 }
 
-.galerie-carousel-list {
+.section--galerie__carousel-list {
     width: 80%;
     display: flex;
     gap: 16px;
@@ -664,12 +668,12 @@ details summary {
     scroll-snap-type: x mandatory;
 }
 
-.galerie-carousel-item {
+.section--galerie__carousel-item {
     flex: 1 0 80%;
     scroll-snap-align: center;
 }
 
-.galerie-carousel {
+.section--galerie__carousel {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -679,7 +683,7 @@ details summary {
     flex-direction: row;
 }
 
-.galerie-carousel-item img {
+.section--galerie__carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
