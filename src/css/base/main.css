@@ -333,7 +333,9 @@ h1 {
     }
 }
 
-.programme-card {
+.programme-card,
+.artistes-card,
+.scenes-card {
     width: 100%;
     position: relative;
     height: var(--card);
@@ -348,9 +350,15 @@ h1 {
         color: var(--light);
         text-decoration: none;
 
-        span {
+        span,
+        .artiste-info {
             padding: 15px;
             z-index: 10;
+            display: block;
+
+            span {
+                padding: 5px;
+            }
         }
     }
 
@@ -363,4 +371,9 @@ h1 {
         filter: brightness(0.75);
         z-index: 1;
     }
+}
+
+.hero-content-2 {
+    padding: var(--padding-section-v) var(--padding-section-h);
+    gap: var(--gap-l);
 }
