@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -26,6 +30,10 @@ h1 {
 
 .bold-text {
     font-weight: 700;
+}
+
+#scroll-icon {
+    animation: bounce 2s infinite;
 }
 
 .section {
@@ -96,7 +104,7 @@ h1 {
     }
 }
 
-.grey-section {
+.section--grey {
     background-color: var(--grey);
     color: var(--light);
 }
@@ -111,7 +119,7 @@ h1 {
     }
 }
 
-.licorn-section::before {
+.section--licorn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -129,7 +137,7 @@ h1 {
     background-color: var(--light);
 }
 
-.licorn-section {
+.section--licorn {
     background-color: rgba(0, 0, 0, 0.75);
     color: var(--light);
 }
