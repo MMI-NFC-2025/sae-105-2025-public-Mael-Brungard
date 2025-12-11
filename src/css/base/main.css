@@ -173,25 +173,30 @@ h1 {
     }
 }
 
+.section--partenaire {
+    padding: 20px;
+}
+
 .section--partenaire__carousel-container {
-    overflow-x: scroll;
+    overflow: hidden;
 }
 
 .section--partenaire__carousel-items-list {
-    width: 300%;
     display: flex;
-    align-items: center;
+    width: calc(200%);
+    animation: scroll 10s linear infinite;
 }
 
 .section--partenaire__carousel-item {
-    width: 100%;
+    flex: 0 0 33.3333%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    img {
-        width: 100%;
-    }
+.section--partenaire__carousel-item img {
+    width: 100%;
+    height: auto;
 }
 
 .section--hero {
