@@ -458,13 +458,13 @@ h1 {
     text-align: start;
 }
 
-.faq-container {
+.section--faq__container {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.faq-cat {
+.section--faq__cat {
     display: flex;
     flex-direction: column;
     gap: 10px;
