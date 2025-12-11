@@ -281,7 +281,8 @@ h1 {
     backdrop-filter: blur(10px);
 }
 
-.team-list {
+.team-list,
+.hebergement-list {
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -377,4 +378,19 @@ h1 {
 .hero-content-2 {
     padding: var(--padding-section-v) var(--padding-section-h);
     gap: var(--gap-l);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.tarifs-card {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: var(--padding-card);
+    border-radius: 10px;
+
+    h2 {
+        text-align: start;
+        color: var(--dark);
+    }
 }
