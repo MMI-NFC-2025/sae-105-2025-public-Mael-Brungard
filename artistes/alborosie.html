@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echos Sonores - Scènes</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <script type="module" src="src/js/menu.js"></script>
+    <title>Echos Sonores - Protoje</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/menu.js"></script>
+    <script type="module" src="/src/js/carousel.js"></script>
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -37,44 +38,53 @@
     </div>
 
     <div class="section--hero">
-        <div class="hero__banner">
-            <h1>Nos Scènes</h1>
+        <div class="hero__banner-custom">
+            <img src="/assets/images/artistes/alborosie.avif" alt="artiste-image">
+            <h1>Alborosie</h1>
         </div>
+
         <div class="hero__content hero__content--large">
-
-            <div class="scenes-card">
-                <a href="/scenes/ouest.html">
-                    <img src="/assets/images/artistes/danakil.avif" alt="artist-card">
-                    <span><strong>Scène 1</strong></span>
-                    <div class="scenes-info">
-                        <span>Lieu : OUEST</span>
-                    </div>
-                </a>
+            <div class="artiste-info-card">
+                <span class="artiste-info-card-title"><strong>Description</strong></span>
+                <p>Alborosie est un artiste reggae italo-jamaïcain installé à Kingston, reconnu pour son style roots authentique. Avec des albums comme Soul Pirate ou Escape from Babylon, il s’est imposé comme l’une des figures majeures du reggae moderne.</p>
             </div>
-
-            <div class="scenes-card">
-                <a href="/scenes/nord.html">
-                    <img src="/assets/images/artistes/tiken-jah-fakoly.avif" alt="artist-card">
-                    <span><strong>Scène 2</strong></span>
-                    <div class="scenes-info">
-                        <span>Lieu : NORD</span>
-                    </div>
-                </a>
+            <div class="lines">
+                <div class="red line"></div>
+                <div class="yellow line"></div>
+                <div class="green line"></div>
             </div>
-
-            <div class="scenes-card">
-                <a href="/scenes/sud.html">
-                    <img src="/assets/images/artistes/bigaranx.avif" alt="artist-card">
-                    <span><strong>Scène 3</strong></span>
-                    <div class="scenes-info">
-                        <span>Lieu : SUD</span>
-                    </div>
-                </a>
+            <div class="artiste-info-card">
+                <span class="artiste-info-card-title"><strong>Performance</strong></span>
+                <div class="artiste-info-card-content">
+                    <span>Date : 31/12/26</span>
+                    <span>Scène : scène 3</span>
+                </div>
             </div>
-
         </div>
     </div>
 
+    <div class="section--galerie section licorn-section">
+        <h2>Galerie Photos</h2>
+        <div class="section--galerie__carousel">
+            <button class="section--galerie__carousel-button carousel__button--prev" aria-label="Défiler vers la gauche">
+                <img src="/assets/icons/icon_arrowcarrousel.svg" alt="fleche gauche" />
+            </button>
+            <div class="section--galerie__carousel-list">
+                <div class="section--galerie__carousel-item">
+                    <img src="/assets/images/artistes/alborosie/alborosie-galerie1.avif" alt="artist-galerie-photo">
+                </div>
+                <div class="section--galerie__carousel-item">
+                    <img src="/assets/images/artistes/alborosie/alborosie-galerie2.avif" alt="artist-galerie-photo">
+                </div>
+                <div class="section--galerie__carousel-item">
+                    <img src="/assets/images/artistes/alborosie/alborosie-galerie3.avif" alt="artist-galerie-photo">
+                </div>
+            </div>
+            <button class="section--galerie__carousel-button carousel__button--next" aria-label="Défiler vers la droite">
+                <img src="/assets/icons/icon_arrowcarrousel.svg" alt="fleche droite" />
+            </button>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer__mentions-part">
             <p>MMI 1ère année  - SAE 105 - Montbéilard</p>
