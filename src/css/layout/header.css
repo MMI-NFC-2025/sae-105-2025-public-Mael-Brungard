@@ -94,6 +94,10 @@
     opacity: 0;
 }
 
+#download-program {
+    font-size: 1.2rem;
+}
+
 .menu-content[aria-hidden='true'] {
     height: 0;
     overflow: hidden;
