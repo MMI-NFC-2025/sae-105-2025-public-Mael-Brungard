@@ -16,13 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="menu" aria-expanded="false">
+    <div class="menu close">
         <header class="head-bar">
             <a href="/index.html"><img src="/assets/favicon/favicon-96x96.png" alt="ES-logo"></a>
-            <div class="nav-btn" aria-expanded="false" aria-label="menu" aria-controls="menu-content">
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+            <button class="nav-btn" aria-expanded="false" aria-label="menu" aria-controls="menu-content">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </header>
         <nav class="menu-content" id="menu-content" aria-hidden="true">
             <ul class="menu-list">
@@ -40,7 +40,7 @@
         <div class="hero-banner">
             <h1 class="logo-text">Notre Programme</h1>
             <button>
-                <h2 id="download-program">Téléchargement PDF</h2>
+                <span id="download-program">Téléchargement PDF</span>
             </button>
         </div>
         <div class="hero-content hero-content-1">
