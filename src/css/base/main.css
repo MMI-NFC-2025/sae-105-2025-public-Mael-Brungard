@@ -19,6 +19,10 @@ h3 {
     text-align: center;
 }
 
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
 h1 {
     font-family: 'Magic-Vintage';
     color: var(--rouge);
@@ -709,4 +713,37 @@ details summary {
     font-style: normal;
     text-align: center;
     font-size: 1.2rem;
+}
+
+.section--filtre {
+    padding: 25px 50px;
+}
+
+.section--filtre__list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    button {
+        background: none;
+        border: none;
+        color: var(--light);
+        font-size: 1rem;
+    }
+}
+
+.download-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--light);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    z-index: 50;
+    border: none;
+    font-size: 1rem;
 }
