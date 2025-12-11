@@ -400,3 +400,95 @@ h1 {
         color: var(--dark);
     }
 }
+
+.transport-section {
+
+    h3 {
+        text-align: start;
+    }
+
+    .options {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .autres {
+        width: 100%;
+    }
+
+    .option {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+        }
+    }
+}
+
+.faq-section h2 {
+    margin: 0;
+}
+
+.faq-section h3 {
+    text-align: start;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.faq-cat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+details .details-content {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    transition: 0.5s;
+}
+
+details[open] .details-content {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.arrow {
+    border: solid var(--light);
+    transform: rotate(-45deg);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: 0.5s;
+}
+
+details[open] .arrow {
+    transform: rotate(45deg);
+}
+
+details summary::marker {
+    display: none;
+}
+
+details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
