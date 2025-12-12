@@ -76,3 +76,5 @@ function hideOverlay() {
     const popup = document.querySelector('.section--equipe__popup');
     popup.classList.remove('section--equipe__popup--show');
 }
+
+// festival.html
