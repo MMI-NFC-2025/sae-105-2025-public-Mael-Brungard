@@ -747,3 +747,23 @@ details summary {
     border: none;
     font-size: 1rem;
 }
+
+.section--filtre__btn-list {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        background: none;
+        border: solid 2px var(--light);
+        border-radius: 10px;
+        padding: 10px;
+        white-space: nowrap;
+        background-color: rgba(255, 255, 255, 0.25);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
