@@ -26,7 +26,15 @@ button {
 h1 {
     font-family: 'Magic-Vintage';
     color: var(--rouge);
-    text-shadow: 0 0 10px var(--jaune);
+    text-shadow:
+        4px 0 0 var(--jaune),
+        -4px 0 0 var(--jaune),
+        0 4px 0 var(--jaune),
+        0 -4px 0 var(--jaune),
+        4px 4px 0 var(--jaune),
+        -4px -4px 0 var(--jaune),
+        4px -4px 0 var(--jaune),
+        -4px 4px 0 var(--jaune);
     font-size: 3rem;
     padding: 0;
     margin: 0;
