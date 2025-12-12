@@ -1,5 +1,5 @@
-const btn_list = document.querySelector('.section--filtre__btn-list');
-const filtres = document.querySelectorAll('.filtre');
+const btn_list = document.querySelector('.filter__tags');
+const filtres = document.querySelectorAll('.filter__btn');
 let activeFiltres = '';
 const filtresOptions = {
     genre: ['Reggae', 'Rock', 'Pop', 'Electro', 'Hip-Hop'],

@@ -1,4 +1,4 @@
-const teamIMG = document.querySelectorAll('.section--equipe__list img');
+const teamIMG = document.querySelectorAll('.team__list img');
 document.body.addEventListener('touchmove', (e) => {
     if (document.body.classList.contains("scroll-listener")) {
         document.body.classList.remove('scroll-listener');
@@ -61,20 +61,20 @@ const team = {
 console.log(teamIMG);
 teamIMG.forEach(img => {
     img.addEventListener('click', () => {
-        const popup = document.querySelector('.section--equipe__popup');
+        const popup = document.querySelector('.team__popup');
         const url = img.getAttribute('src');
         const name = img.getAttribute('id');
         popup.querySelector('img').setAttribute('src', url);
-        popup.querySelector('.section--equipe__popup__name').textContent = team[name].name;
-        popup.querySelector('.section--equipe__popup__role').textContent = team[name].role;
-        popup.querySelector('.section--equipe__popup__description').textContent = team[name].description;
-        popup.classList.add('section--equipe__popup--show');
+        popup.querySelector('.team__popup-name').textContent = team[name].name;
+        popup.querySelector('.team__popup-role').textContent = team[name].role;
+        popup.querySelector('.team__popup-description').textContent = team[name].description;
+        popup.classList.add('team__popup--show');
         document.body.classList.add('scroll-listener');
     });
 });
 function hideOverlay() {
-    const popup = document.querySelector('.section--equipe__popup');
-    popup.classList.remove('section--equipe__popup--show');
+    const popup = document.querySelector('.team__popup');
+    popup.classList.remove('team__popup--show');
 }
 
 // festival.html
