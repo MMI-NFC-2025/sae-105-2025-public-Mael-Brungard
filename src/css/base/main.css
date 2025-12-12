@@ -60,9 +60,7 @@ h1 {
     gap: 7px;
     width: 100%;
 
-    .lines__item--green,
-    .lines__item--yellow,
-    .lines__item--red {
+    .lines__item {
         width: 100%;
         height: 5px;
     }
@@ -77,6 +75,27 @@ h1 {
 
     .lines__item--red {
         background-color: var(--rouge)
+    }
+}
+
+.lines--animated .lines__item {
+    width: 100%;
+    height: 10px;
+    mask-image: url('/assets/icons/line.svg');
+    mask-position: center;
+    mask-size: cover;
+    mask-repeat: repeat-x;
+    mask-size: 200% auto;
+    animation: moveMask 10s infinite linear;
+}
+
+@keyframes moveMask {
+    0% {
+        mask-position: 0 0;
+    }
+
+    100% {
+        mask-position: 200% 0;
     }
 }
 
