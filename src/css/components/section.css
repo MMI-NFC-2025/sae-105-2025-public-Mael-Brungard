@@ -26,7 +26,7 @@
 .section--licorn {
     background-color: rgba(0, 0, 0, 0.75);
     color: var(--light);
-    padding: var(--padding-section-v) 0;
+    padding: var(--padding-section-v) var(--padding-section-h);
 }
 
 .section--licorn::before {
