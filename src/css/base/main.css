@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;

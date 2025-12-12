@@ -14,3 +14,5 @@ if (carousel) {
     });
 }
 
+// artistes/lila-ike.html ou autres artistes
+// artistes.html pour accéder au pages des artistes

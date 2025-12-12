@@ -14,7 +14,6 @@ filtres.forEach(filtre => {
             btn_list.innerHTML = '';
             activeFiltres = '';
         } else {
-            // Clear previous buttons
             btn_list.innerHTML = '';
             options.forEach(option => {
                 const button = document.createElement('button');
@@ -26,3 +25,5 @@ filtres.forEach(filtre => {
         }
     })
 });
+
+// programme.html

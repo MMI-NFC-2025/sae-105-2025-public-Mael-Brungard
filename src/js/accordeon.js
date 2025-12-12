@@ -4,3 +4,5 @@ details.forEach(e => {
         details.forEach((det) => (det.open = false));
     })
 });
+
+// infos.html (bas de page dans FAQ)

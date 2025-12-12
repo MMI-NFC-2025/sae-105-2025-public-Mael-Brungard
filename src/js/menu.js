@@ -6,5 +6,8 @@ toggle.addEventListener('click', () => {
     menu_content.ariaHidden = isOpen;
     toggle.ariaExpanded = !isOpen;
     menu.classList.toggle('menu--close');
+    document.body.classList.toggle("no-scroll");
     isOpen = !isOpen;
 });
+
+// toutes les pages
