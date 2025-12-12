@@ -1,0 +1,107 @@
+.artiste-info-card {
+    background-color: var(--light);
+
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+    .artiste-info-card-content {
+        padding: var(--padding-card);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .artiste-info-card-title,
+    p {
+        padding: var(--padding-card);
+        margin: 0;
+    }
+}
+
+.programme-card,
+.artistes-card,
+.scenes-card {
+    width: 100%;
+    position: relative;
+    height: var(--card);
+    display: flex;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        color: var(--light);
+        text-decoration: none;
+
+        span,
+        .artiste-info,
+        .scenes-info {
+            padding: 15px;
+            z-index: 10;
+            display: block;
+
+            span {
+                padding: 5px;
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: var(--card);
+        object-fit: cover;
+        border-radius: 10px;
+        filter: brightness(0.75);
+        z-index: 1;
+    }
+}
+
+.white-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: var(--padding-card);
+    height: var(--card);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.home-card a {
+    width: 100%;
+    height: var(--card);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: var(--light);
+    text-decoration: none;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        border-radius: 10px;
+        filter: brightness(0.75);
+        object-fit: cover;
+    }
+
+    .card-text {
+        padding: var(--padding-card);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+
+    }
+}

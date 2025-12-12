@@ -3,4 +3,7 @@
 @import url('/src/css/layout/footer.css');
 @import url('/src/css/layout/header.css');
 @import url('/src/css/utils/variables.css');
-@import url('/src/css/style.css');
+@import url('/src/css/components/cards.css');
+@import url('/src/css/components/details.css');
+@import url('/src/css/components/hero.css');
+@import url('/src/css/components/section.css');

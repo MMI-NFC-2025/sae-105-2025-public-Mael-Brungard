@@ -1,0 +1,539 @@
+/* Base section */
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: var(--padding-section-v) var(--padding-section-h);
+    gap: var(--gap-m);
+}
+
+.section--grey {
+    background-color: var(--grey);
+    color: var(--light);
+}
+
+.section--reggae {
+    background: url('/assets/images/section-background.avif');
+    background-position: start;
+    background-size: cover;
+
+    h2 {
+        color: var(--light);
+    }
+}
+
+.section--licorn {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: var(--light);
+}
+
+.section--licorn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/assets/images/licorn-bg.avif');
+    background-position: center;
+    background-size: cover;
+    filter: brightness(1.3) saturate(1.8) blur(2px);
+    z-index: -1;
+}
+
+.section--white {
+    background-color: var(--light);
+}
+
+/* Home section */
+.section--home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 800px;
+    padding-block: var(--padding-section-h) 5px;
+
+    #mascotte {
+        height: 300px;
+    }
+
+    #scroll-icon {
+        height: 50px;
+    }
+}
+
+.section--home__content {
+    gap: 10px;
+}
+
+.section--home__content,
+.section--home__content__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+/* Partenaire section */
+
+.section--partenaire {
+    padding: 20px;
+}
+
+.section--partenaire__carousel-container {
+    overflow: hidden;
+}
+
+.section--partenaire__carousel-items-list {
+    display: flex;
+    width: calc(200%);
+    animation: scroll 10s linear infinite;
+}
+
+.section--partenaire__carousel-item {
+    flex: 0 0 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section--partenaire__carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Section equipe */
+
+.section--equipe__popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    text-align: start;
+    opacity: 0;
+    transition: 0.8s;
+    z-index: 1000;
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .team-popup-text {
+        p {
+            margin: 5px 0;
+        }
+    }
+}
+
+.section--equipe__popup--show {
+    opacity: 1;
+}
+
+/* + hebergement */
+.section--equipe__list,
+.section--hebergement__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50px;
+    }
+
+    .separator {
+        height: 15px;
+        width: 15px;
+        background-color: var(--dark);
+    }
+
+    img:nth-of-type(2),
+    a:nth-of-type(2) {
+        width: 100px;
+        height: 100px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* section edition */
+
+.section--edition {
+
+    .section--edition__themes,
+    .section--edition__valeurs {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .section--edition__valeurs__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .valeur {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+/* Section tarifs */
+
+.section--tarifs__card {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: var(--padding-card);
+    border-radius: 10px;
+
+    h2 {
+        text-align: start;
+        color: var(--dark);
+    }
+}
+
+/* Section transport */
+
+.section--transport {
+
+    h3 {
+        text-align: start;
+    }
+
+    .options {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .autres {
+        width: 100%;
+    }
+
+    .option {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+        }
+    }
+}
+
+/* Section FAQ */
+
+.section--faq h2 {
+    margin: 0;
+}
+
+.section--faq h3 {
+    text-align: start;
+}
+
+.section--faq__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.section--faq__cat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Section contact */
+
+.section--contact {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 2rem;
+        text-shadow: none;
+        color: var(--dark);
+    }
+}
+
+.section--contact__content {
+    padding: var(--padding-section-h);
+
+    h2 {
+        text-align: start;
+    }
+
+    .section--contact__background-image {
+        content: '';
+        background: url('/assets/images/licorn-bg.avif');
+        background-position: center;
+        background-size: cover;
+        filter: brightness(1.3) saturate(1.8) blur(2px);
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+    }
+
+    .section--contact__form {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-m);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: var(--light);
+    }
+
+    .email,
+    .sujet,
+    .message {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input,
+        textarea {
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            border: none;
+            padding: 10px;
+            color: var(--light);
+            border-radius: 5px;
+        }
+
+        input::placeholder {
+            color: var(--light);
+
+        }
+
+        textarea {
+            min-height: 200px;
+        }
+    }
+
+    button {
+        padding: 10px;
+        margin-inline: var(--gap-m);
+        background-color: var(--grey);
+        color: var(--light);
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+.section--contact {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 2rem;
+        text-shadow: none;
+        color: var(--dark);
+    }
+}
+
+.section--contact__content {
+    padding: var(--padding-section-h);
+
+    h2 {
+        text-align: start;
+    }
+
+    .section--contact__background-image {
+        content: '';
+        background: url('/assets/images/licorn-bg.avif');
+        background-position: center;
+        background-size: cover;
+        filter: brightness(1.3) saturate(1.8) blur(2px);
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+    }
+
+    .section--contact__form {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-m);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: var(--light);
+    }
+
+    .email,
+    .sujet,
+    .message {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input,
+        textarea {
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            border: none;
+            padding: 10px;
+            color: var(--light);
+            border-radius: 5px;
+        }
+
+        input::placeholder {
+            color: var(--light);
+
+        }
+
+        textarea {
+            min-height: 200px;
+        }
+    }
+
+    button {
+        padding: 10px;
+        margin-inline: var(--gap-m);
+        background-color: var(--grey);
+        color: var(--light);
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Section galerie */
+
+.section--galerie {
+    padding-inline: 0;
+}
+
+.section--galerie__carousel-button {
+    flex: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.section--galerie__carousel-list::-webkit-scrollbar {
+    height: 0;
+}
+
+.section--galerie__carousel-list {
+    width: 80%;
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.section--galerie__carousel-item {
+    flex: 1 0 80%;
+    scroll-snap-align: center;
+}
+
+.section--galerie__carousel {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.section--galerie__carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Section filtre */
+
+.section--filtre {
+    padding: 25px 50px;
+}
+
+.section--filtre__list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    button {
+        background: none;
+        border: none;
+        color: var(--light);
+        font-size: 1rem;
+    }
+}
+
+.section--filtre__btn-list {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        background: none;
+        border: solid 2px var(--light);
+        border-radius: 10px;
+        padding: 10px;
+        white-space: nowrap;
+        background-color: rgba(255, 255, 255, 0.25);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
