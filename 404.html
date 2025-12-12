@@ -18,23 +18,24 @@
 </head>
 <body>
 
-    <div class="section--404">
-        <h1 id="text-404">Error 404</h1>
-        <img src="assets/icons/404-icon.avif" alt="404-icon">
+    <div class="error-page">
+        <h1 class="error-page__title" id="text-404">Error 404</h1>
+        <img src="assets/icons/404-icon.avif" alt="404-icon" class="error-page__icon">
         
-        <h2>Oups ! La page que vous recherchez n'existe pas.</h2>
-        <a href="/index.html">
+        <h2 class="error-page__subtitle">Oups ! La page que vous recherchez n'existe pas.</h2>
+        <a href="/index.html" class="error-page__link">
             Retour à l'accueil
         </a>
         <form 
             action="https://duckduckgo.com/" 
             method="GET" 
+            class="error-page__search"
             x-data="{ q:'' }" 
             x-on:submit.prevent="$el.querySelector('input[name=q]').value = q + ' site:echosonore.boomoon.cloud'; $el.submit()">
-            <h3>Vous pouvez aussi effectuer une recherche sur le site :</h3>
-            <label for="q" hidden>Texte à chercher :</label>
-            <input type="text" id="q" name="q" x-model="q">
-            <button type="submit">Rechercher</button>
+            <h3 class="error-page__search-title">Vous pouvez aussi effectuer une recherche sur le site :</h3>
+            <label for="q" class="error-page__search-label" hidden>Texte à chercher :</label>
+            <input type="text" id="q" name="q" class="error-page__search-input" x-model="q">
+            <button type="submit" class="error-page__search-btn">Rechercher</button>
         </form>
     </div>
 </body>

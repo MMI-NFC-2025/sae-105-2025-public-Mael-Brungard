@@ -17,15 +17,15 @@
 </head>
 <body>
     <div class="menu menu--close">
-        <header class="header__headbar">
+        <header class="menu__headbar">
             <a href="/index.html"><img src="/assets/favicon/favicon-96x96.png" alt="ES-logo"></a>
             <button class="nav-btn" aria-expanded="false" aria-label="menu" aria-controls="menu__content">
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="nav-btn__bar"></span>
+                <span class="nav-btn__bar"></span>
             </button>
         </header>
         <nav class="menu__content" id="menu__content" aria-hidden="true">
-            <ul class="menu__content__list">
+            <ul class="menu__list">
                 <li><a href="/festival.html">Le Festival ⋅</a></li>
                 <li><a href="/programme.html">Programme ⋅</a></li>
                 <li><a href="/artistes.html">Artistes ⋅</a></li>
@@ -36,37 +36,37 @@
         </nav>
     </div>
 
-    <div class="section--hero">
+    <div class="hero">
         <div class="hero__banner">
-            <h1>Nos Scènes</h1>
+            <h1 class="hero__title">Nos Scènes</h1>
         </div>
         <div class="hero__content hero__content--large">
 
-            <div class="scenes-card">
-                <a href="/scenes/ouest.html">
-                    <img src="/assets/images/artistes/danakil.avif" alt="artist-card">
-                    <span><strong>Scène 1</strong></span>
-                    <div class="scenes-info">
+            <div class="scene-card">
+                <a href="/scenes/ouest.html" class="scene-card__link">
+                    <img src="/assets/images/artistes/danakil.avif" alt="artist-card" loading="lazy" class="scene-card__image">
+                    <span class="scene-card__title"><strong>Scène 1</strong></span>
+                    <div class="scene-card__info">
                         <span>Lieu : OUEST</span>
                     </div>
                 </a>
             </div>
 
-            <div class="scenes-card">
-                <a href="/scenes/nord.html">
-                    <img src="/assets/images/artistes/tiken-jah-fakoly.avif" alt="artist-card">
-                    <span><strong>Scène 2</strong></span>
-                    <div class="scenes-info">
+            <div class="scene-card">
+                <a href="/scenes/nord.html" class="scene-card__link">
+                    <img src="/assets/images/artistes/tiken-jah-fakoly.avif" alt="artist-card" loading="lazy" class="scene-card__image">
+                    <span class="scene-card__title"><strong>Scène 2</strong></span>
+                    <div class="scene-card__info">
                         <span>Lieu : NORD</span>
                     </div>
                 </a>
             </div>
 
-            <div class="scenes-card">
-                <a href="/scenes/sud.html">
-                    <img src="/assets/images/artistes/bigaranx.avif" alt="artist-card">
-                    <span><strong>Scène 3</strong></span>
-                    <div class="scenes-info">
+            <div class="scene-card">
+                <a href="/scenes/sud.html" class="scene-card__link">
+                    <img src="/assets/images/artistes/bigaranx.avif" alt="artist-card" loading="lazy" class="scene-card__image">
+                    <span class="scene-card__title"><strong>Scène 3</strong></span>
+                    <div class="scene-card__info">
                         <span>Lieu : SUD</span>
                     </div>
                 </a>

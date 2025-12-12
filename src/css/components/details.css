@@ -1,4 +1,4 @@
-details .details-content {
+details .faq__content {
     display: block;
     max-height: 0;
     overflow: hidden;
@@ -7,13 +7,13 @@ details .details-content {
     transition: 0.5s;
 }
 
-details[open] .details-content {
+details[open] .faq__content {
     max-height: 500px;
     opacity: 1;
     margin-top: 10px;
 }
 
-.arrow {
+.faq__arrow {
     border: solid var(--light);
     transform: rotate(-45deg);
     border-width: 0 3px 3px 0;
@@ -22,7 +22,7 @@ details[open] .details-content {
     transition: 0.5s;
 }
 
-details[open] .arrow {
+details[open] .faq__arrow {
     transform: rotate(45deg);
 }
 

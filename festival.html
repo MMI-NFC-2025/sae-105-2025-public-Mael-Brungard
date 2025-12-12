@@ -18,15 +18,15 @@
 </head>
 <body>
     <div class="menu menu--close">
-        <header class="header__headbar">
+        <header class="menu__headbar">
             <a href="/index.html"><img src="/assets/favicon/favicon-96x96.png" alt="ES-logo"></a>
             <button class="nav-btn" aria-expanded="false" aria-label="menu" aria-controls="menu__content">
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="nav-btn__bar"></span>
+                <span class="nav-btn__bar"></span>
             </button>
         </header>
         <nav class="menu__content" id="menu__content" aria-hidden="true">
-            <ul class="menu__content__list">
+            <ul class="menu__list">
                 <li><a href="/festival.html">Le Festival ⋅</a></li>
                 <li><a href="/programme.html">Programme ⋅</a></li>
                 <li><a href="/artistes.html">Artistes ⋅</a></li>
@@ -37,135 +37,140 @@
         </nav>
     </div>
 
-    <div class="section--hero">
+    <div class="hero">
         <div class="hero__banner">
-            <h1>Le Festival</h1>
+            <h1 class="hero__title">Le Festival</h1>
         </div>
         <div class="hero__content hero__content--small">
-            <div class="hero__content__card">
+            <div class="hero__card">
                 <a href="#histoire-section">
-                    <img src="assets/images/cards/histoire.avif" alt="histoire-card">
+                    <img src="assets/images/cards/histoire.avif" alt="histoire-card" loading="lazy" class="hero__card-image">
                     <span><strong>Notre histoire</strong></span>
                 </a>
             </div>
             <div class="lines">
-                <div class="red line"></div>
-                <div class="yellow line"></div>
-                <div class="green line"></div>
+                <div class="lines__item lines__item--red"></div>
+                <div class="lines__item lines__item--yellow"></div>
+                <div class="lines__item lines__item--green"></div>
             </div>
-            <div class="hero__content__card">
+            <div class="hero__card">
                 <a href="#equipe-section">
-                    <img src="assets/images/cards/equipe.avif" alt="equipe-card">
+                    <img src="assets/images/cards/equipe.avif" alt="equipe-card" loading="lazy" class="hero__card-image">
                     <span><strong>Notre équipe</strong></span>
                 </a>
             </div>
             <div class="lines">
-                <div class="red line"></div>
-                <div class="yellow line"></div>
-                <div class="green line"></div>
+                <div class="lines__item lines__item--red"></div>
+                <div class="lines__item lines__item--yellow"></div>
+                <div class="lines__item lines__item--green"></div>
             </div>
-            <div class="hero__content__card">
+            <div class="hero__card">
                 <a href="#edition-section">
-                    <img src="assets/images/cards/2026.avif" alt="2026-card">
+                    <img src="assets/images/cards/2026.avif" alt="2026-card" loading="lazy" class="hero__card-image">
                     <span><strong>Édition 2026</strong></span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="section--histoire section--reggae section" id="histoire-section">
-        <h2 class="">Notre histoire</h2>
-        <div class="section--histoire__card white-card text-dark">
-                <span><strong>La naissance d’une équipe</strong></span>
-                <p>Ce projet à démarrer dans le cadre d’un travail étudiants en MMI.Ce projet à finis par ce concrétiser et est devenu le festival que vous connaissez.</p>
+
+    <div class="section section--reggae" id="histoire-section">
+        <h2 class="section__title">Notre histoire</h2>
+        <div class="story-card">
+            <span class="story-card__title"><strong>La naissance d'une équipe</strong></span>
+            <p>Ce projet à démarrer dans le cadre d'un travail étudiants en MMI.Ce projet à finis par ce concrétiser et est devenu le festival que vous connaissez.</p>
         </div>
         <div class="lines">
-            <div class="red line"></div>
-            <div class="yellow line"></div>
-            <div class="green line"></div>
+            <div class="lines__item lines__item--red"></div>
+            <div class="lines__item lines__item--yellow"></div>
+            <div class="lines__item lines__item--green"></div>
         </div>
-        <div class="section--histoire__card white-card text-dark">
-                <span><strong>Notre premier festival</strong></span>
-                <p>En 2026 nous organiserons notre premier festival de reggae. Ce festival vise tout public et à pour but de rendre le reggae accessible.</p>
+        <div class="story-card">
+            <span class="story-card__title"><strong>Notre premier festival</strong></span>
+            <p>En 2026 nous organiserons notre premier festival de reggae. Ce festival vise tout public et à pour but de rendre le reggae accessible.</p>
         </div>
         <div class="lines">
-            <div class="red line"></div>
-            <div class="yellow line"></div>
-            <div class="green line"></div>
+            <div class="lines__item lines__item--red"></div>
+            <div class="lines__item lines__item--yellow"></div>
+            <div class="lines__item lines__item--green"></div>
         </div>
-        <div class="section--histoire__card white-card text-dark">
-                <span><strong>Nos projets à venir</strong></span>
-                <p>Nous visons à égaler les meilleurs festivals et à donner une nouvelles images plus propre aux festivals de musique. </p>
+        <div class="story-card">
+            <span class="story-card__title"><strong>Nos projets à venir</strong></span>
+            <p>Nous visons à égaler les meilleurs festivals et à donner une nouvelles images plus propre aux festivals de musique. </p>
         </div>
     </div>
 
-    <div class="section--equipe text-dark section--white section" id="equipe-section">
-        <div class="section--equipe__cat">
-            <h3>Logistique</h3>
-            <div class="section--equipe__list">
-                <img src="/assets/images/team/team1.avif" id="valentine" alt="team-image" loading="lazy">
-                <div class="separator"></div>
-                <img src="/assets/images/team/team2.avif" id="pedro" alt="team-image" loading="lazy">
-                <div class="separator"></div>
-                <img src="/assets/images/team/team3.avif" id="maxence" alt="team-image" loading="lazy">
+    <div class="section section--white" id="equipe-section">
+        <div class="team">
+            <div class="team__category">
+                <h3 class="team__category-title">Logistique</h3>
+                <div class="team__list">
+                    <img src="/assets/images/team/team1.avif" id="valentine" alt="team-image" loading="lazy" class="team__image">
+                    <div class="separator"></div>
+                    <img src="/assets/images/team/team2.avif" id="pedro" alt="team-image" loading="lazy" class="team__image">
+                    <div class="separator"></div>
+                    <img src="/assets/images/team/team3.avif" id="maxence" alt="team-image" loading="lazy" class="team__image">
+                </div>
             </div>
-        </div>
-        <div class="section--equipe__cat">
-            <h3>Son</h3>
-            <div class="section--equipe__list">
-                <img src="/assets/images/team/team4.avif" id="lea" alt="team-image" loading="lazy">
-                <div class="separator"></div>
-                <img src="/assets/images/team/team5.avif" id="constance" alt="team-image" loading="lazy">
-                <div class="separator"></div>
-                <img src="/assets/images/team/team6.avif" id="roxanne" alt="team-image" loading="lazy">
+            <div class="team__category">
+                <h3 class="team__category-title">Son</h3>
+                <div class="team__list">
+                    <img src="/assets/images/team/team4.avif" id="lea" alt="team-image" loading="lazy" class="team__image">
+                    <div class="separator"></div>
+                    <img src="/assets/images/team/team5.avif" id="constance" alt="team-image" loading="lazy" class="team__image">
+                    <div class="separator"></div>
+                    <img src="/assets/images/team/team6.avif" id="roxanne" alt="team-image" loading="lazy" class="team__image">
+                </div>
             </div>
-        </div>
-        <div class="section--equipe__cat">
-            <h3>Support</h3>
-            <div class="section--equipe__list">
-                <img src="/assets/images/team/team7.avif" id="evan" alt="team-image" loading="lazy">
-                <div class="separator"></div>
-                <img src="/assets/images/team/team8.avif" id="nina" alt="team-image" loading="lazy">
-                <div class="separator"></div>
-                <img src="/assets/images/team/team9.avif" id="camille" alt="team-image" loading="lazy">
+            <div class="team__category">
+                <h3 class="team__category-title">Support</h3>
+                <div class="team__list">
+                    <img src="/assets/images/team/team7.avif" id="evan" alt="team-image" loading="lazy" class="team__image">
+                    <div class="separator"></div>
+                    <img src="/assets/images/team/team8.avif" id="nina" alt="team-image" loading="lazy" class="team__image">
+                    <div class="separator"></div>
+                    <img src="/assets/images/team/team9.avif" id="camille" alt="team-image" loading="lazy" class="team__image">
+                </div>
             </div>
-        </div>
-        <div class="section--equipe__popup">
-            <img src="/assets/images/team/team1.avif" alt="team-popup-image">
-            <span class="section--equipe__popup__name"><strong>Nom Prénom</strong></span>
-            <div class="team-popup-text">
-                <p class="section--equipe__popup__role">Rôle dans l'équipe</p>
-                <p class="section--equipe__popup__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dolorem, nihil consectetur, nemo, velit voluptatem modi cum voluptas iste iusto saepe exercitationem! Distinctio ea voluptatem eius aut dolor! Eos, debitis?</p>
+            <div class="team__popup">
+                <img src="/assets/images/team/team1.avif" alt="team-popup-image" class="team__popup-image">
+                <span class="team__popup-name"><strong>Nom Prénom</strong></span>
+                <div class="team__popup-content">
+                    <p class="team__popup-role">Rôle dans l'équipe</p>
+                    <p class="team__popup-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dolorem, nihil consectetur, nemo, velit voluptatem modi cum voluptas iste iusto saepe exercitationem! Distinctio ea voluptatem eius aut dolor! Eos, debitis?</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="section--edition section--licorn section" id="edition-section">
-        <h2>Édition 2026</h2>
-        <div class="section--edition__themes">
-            <h3>Thématiques</h3>
-            <ul>
-                <li>Festival de la <strong>culture reggae</strong></li>
-                <li>Festival de <strong>la création artistique</strong></li>
-                <li>Festival de <strong>l’innovation locale</strong></li>
-                <li>Festival de <strong>l’engagement citoyen</strong></li>
-            </ul>
-        </div>
-        <div class="section--edition__valeurs">
-            <h3>Valeurs</h3>
-                <div class="section--edition__valeurs__container">
-                    <div class="valeur">
-                        <img src="/assets/icons/valeurs/conv.avif" alt="convivialite-icon" loading="lazy">
+    <div class="section section--licorn" id="edition-section">
+        <h2 class="section__title">Édition 2026</h2>
+        <div class="edition">
+            <div class="edition__themes">
+                <h3 class="edition__themes-title">Thématiques</h3>
+                <ul class="edition__themes-list">
+                    <li>Festival de la <strong>culture reggae</strong></li>
+                    <li>Festival de <strong>la création artistique</strong></li>
+                    <li>Festival de <strong>l'innovation locale</strong></li>
+                    <li>Festival de <strong>l'engagement citoyen</strong></li>
+                </ul>
+            </div>
+            <div class="edition__values">
+                <h3 class="edition__values-title">Valeurs</h3>
+                <div class="edition__values-list">
+                    <div class="edition__value">
+                        <img src="/assets/icons/valeurs/conv.avif" alt="convivialite-icon" loading="lazy" class="edition__value-icon">
                         <strong>Convivialité</strong>
                     </div>
-                    <div class="valeur">
-                        <img src="/assets/icons/valeurs/eco.avif" alt="ecologie-icon" loading="lazy">
+                    <div class="edition__value">
+                        <img src="/assets/icons/valeurs/eco.avif" alt="ecologie-icon" loading="lazy" class="edition__value-icon">
                         <strong>Écologie</strong>
                     </div>
-                    <div class="valeur">
-                        <img src="/assets/icons/valeurs/crea.avif" alt="creativite-icon" loading="lazy">
+                    <div class="edition__value">
+                        <img src="/assets/icons/valeurs/crea.avif" alt="creativite-icon" loading="lazy" class="edition__value-icon">
                         <strong>Créativité</strong>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 

@@ -18,15 +18,15 @@
 </head>
 <body>
     <div class="menu menu--close">
-        <header class="header__headbar">
+        <header class="menu__headbar">
             <a href="/index.html"><img src="/assets/favicon/favicon-96x96.png" alt="ES-logo"></a>
             <button class="nav-btn" aria-expanded="false" aria-label="menu" aria-controls="menu__content">
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="nav-btn__bar"></span>
+                <span class="nav-btn__bar"></span>
             </button>
         </header>
         <nav class="menu__content" id="menu__content" aria-hidden="true">
-            <ul class="menu__content__list">
+            <ul class="menu__list">
                 <li><a href="/festival.html">Le Festival ⋅</a></li>
                 <li><a href="/programme.html">Programme ⋅</a></li>
                 <li><a href="/artistes.html">Artistes ⋅</a></li>
@@ -37,25 +37,25 @@
         </nav>
     </div>
 
-    <div class="section--hero">
+    <div class="hero">
         <div class="hero__banner-custom">
             <img src="/assets/images/artistes/yaniss-odua.avif" alt="artiste-image">
-            <h1>Yaniss Odua</h1>
+            <h1 class="hero__title">Yaniss Odua</h1>
         </div>
 
         <div class="hero__content hero__content--large">
             <div class="artiste-info-card">
-                <span class="artiste-info-card-title"><strong>Description</strong></span>
-                <p>Yaniss Odua est un chanteur reggae français originaire de Marseille, apprécié pour ses textes conscients et son style roots chaleureux. Il s’est fait connaître sur la scène reggae francophone avec des titres marquants et une présence scénique captivante.</p>
+                <span class="artiste-info-card__title"><strong>Description</strong></span>
+                <p>Yaniss Odua est un chanteur reggae français originaire de Marseille, apprécié pour ses textes conscients et son style roots chaleureux. Il s'est fait connaître sur la scène reggae francophone avec des titres marquants et une présence scénique captivante.</p>
             </div>
             <div class="lines">
-                <div class="red line"></div>
-                <div class="yellow line"></div>
-                <div class="green line"></div>
+                <div class="lines__item lines__item--red"></div>
+                <div class="lines__item lines__item--yellow"></div>
+                <div class="lines__item lines__item--green"></div>
             </div>
             <div class="artiste-info-card">
-                <span class="artiste-info-card-title"><strong>Performance</strong></span>
-                <div class="artiste-info-card-content">
+                <span class="artiste-info-card__title"><strong>Performance</strong></span>
+                <div class="artiste-info-card__content">
                     <span>Date : 31/12/26</span>
                     <span>Scène : scène 3</span>
                 </div>
@@ -63,8 +63,8 @@
         </div>
     </div>
 
-    <div class="section--galerie section section--licorn">
-        <h2>Galerie Photos</h2>
+    <div class="section section--licorn">
+        <h2 class="section__title">Galerie Photos</h2>
         <div class="section--galerie__carousel">
             <button class="section--galerie__carousel-button carousel__button--prev" aria-label="Défiler vers la gauche">
                 <img src="/assets/icons/icon_arrowcarrousel.svg" alt="fleche gauche" />
